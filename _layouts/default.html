@@ -7,9 +7,8 @@
   <meta name="description" content="{{ page.description | default: site.description | strip_html | truncate: 160 }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
+    window.tailwindConfig = {
       theme: {
         extend: {
           fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
@@ -17,6 +16,7 @@
       }
     }
   </script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     /* ─── Color tokens — edit here to retheme the entire site ─── */
     :root {
@@ -30,6 +30,7 @@
     }
 
     html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
 
     /* Semi-transparent nav using CSS color-mix (avoids Tailwind opacity limitation with CSS vars) */
     .nav-bg { background-color: color-mix(in srgb, var(--color-bg) 92%, transparent); }
