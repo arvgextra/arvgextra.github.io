@@ -62,3 +62,12 @@ cv:
         items:
           - C++, JavaScript, TypeScript
           - Power Platform (Apps, Automate), Jira, Figma
+
+  - title: Interests
+    type: list
+    contents:
+      - Applied AI research and production ML systems
+      - Knowledge graphs and hybrid retrieval
+      - Cricket (IPL)
+      - Flamenco music
+      - Cultural travel
