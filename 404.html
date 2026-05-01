@@ -17,6 +17,20 @@
       }
     }
   </script>
+  <style>
+    /* ─── Color tokens — edit here to retheme the entire site ─── */
+    :root {
+      --color-primary:      #f4753e; /* tangerine-400 — buttons, active states  */
+      --color-primary-dark: #f1520e; /* tangerine-500 — hover on primary        */
+      --color-accent:       #619e8b; /* muted-teal-500 — section labels, pills  */
+      --color-bg:           #15140f; /* ebony-950 — page background             */
+      --color-text:         #eae9e1; /* ebony-100 — body text                   */
+      --color-text-muted:   #aaa788; /* ebony-500 — secondary text              */
+      --color-border:       #27261b; /* ebony-800 — dividers, card borders      */
+    }
+
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
 <body class="bg-white text-slate-800 font-sans antialiased">
 
@@ -25,10 +39,14 @@
       <a href="/" class="text-sm font-semibold text-slate-900 hover:text-indigo-600 transition-colors">
         Aarav Gambhir
       </a>
-      <nav class="flex items-center gap-5 text-sm font-medium text-slate-500">
-        <a href="/" class="hover:text-slate-900 transition-colors">About</a>
-        <a href="/projects/" class="hover:text-slate-900 transition-colors">Projects</a>
-        <a href="/cv/" class="hover:text-slate-900 transition-colors">CV</a>
+      
+      <nav class="flex items-center gap-4 text-sm font-medium text-slate-500">
+        <a href="/#about"      class="hover:text-slate-900 transition-colors">About</a>
+        <a href="/#experience" class="hover:text-slate-900 transition-colors">Experience</a>
+        <a href="/#skills"     class="hover:text-slate-900 transition-colors">Skills</a>
+        <a href="/#projects"   class="hover:text-slate-900 transition-colors">Projects</a>
+        <a href="/#interests"  class="hover:text-slate-900 transition-colors">Interests</a>
+        <a href="/#contact"    class="hover:text-slate-900 transition-colors">Contact</a>
         <a href="https://github.com/arvgextra" target="_blank" rel="noopener noreferrer"
            class="hover:text-slate-900 transition-colors" aria-label="GitHub">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -45,7 +63,7 @@
     </div>
   </header>
 
-  <main class="max-w-3xl mx-auto px-6 py-16">
+  <main class="max-w-3xl mx-auto px-6">
     
 <header class="mb-12">
   <h1 class="text-3xl font-bold tracking-tight text-slate-900">Page not found</h1>
@@ -69,7 +87,7 @@
 
   </main>
 
-  <footer class="border-t border-slate-100">
+  <footer class="border-t border-slate-100 mt-8">
     <div class="max-w-3xl mx-auto px-6 py-6 flex items-center justify-between text-xs text-slate-400">
       <span>© 2026 Aarav Gambhir</span>
       <a href="mailto:arvgextra@gmail.com" class="hover:text-indigo-500 transition-colors">arvgextra@gmail.com</a>
