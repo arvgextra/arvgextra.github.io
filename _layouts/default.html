@@ -17,6 +17,20 @@
       }
     }
   </script>
+  <style>
+    /* ─── Color tokens — edit here to retheme the entire site ─── */
+    :root {
+      --color-primary:      #f4753e; /* tangerine-400 — buttons, active states  */
+      --color-primary-dark: #f1520e; /* tangerine-500 — hover on primary        */
+      --color-accent:       #619e8b; /* muted-teal-500 — section labels, pills  */
+      --color-bg:           #15140f; /* ebony-950 — page background             */
+      --color-text:         #eae9e1; /* ebony-100 — body text                   */
+      --color-text-muted:   #aaa788; /* ebony-500 — secondary text              */
+      --color-border:       #27261b; /* ebony-800 — dividers, card borders      */
+    }
+
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
 <body class="bg-white text-slate-800 font-sans antialiased">
 
@@ -25,10 +39,14 @@
       <a href="{{ '/' | relative_url }}" class="text-sm font-semibold text-slate-900 hover:text-indigo-600 transition-colors">
         {{ site.first_name }} {{ site.last_name }}
       </a>
-      <nav class="flex items-center gap-5 text-sm font-medium text-slate-500">
-        <a href="{{ '/' | relative_url }}" class="hover:text-slate-900 transition-colors">About</a>
-        <a href="{{ '/projects/' | relative_url }}" class="hover:text-slate-900 transition-colors">Projects</a>
-        <a href="{{ '/cv/' | relative_url }}" class="hover:text-slate-900 transition-colors">CV</a>
+      {% assign home = '/' | relative_url %}
+      <nav class="flex items-center gap-4 text-sm font-medium text-slate-500">
+        <a href="{{ home }}#about"      class="hover:text-slate-900 transition-colors">About</a>
+        <a href="{{ home }}#experience" class="hover:text-slate-900 transition-colors">Experience</a>
+        <a href="{{ home }}#skills"     class="hover:text-slate-900 transition-colors">Skills</a>
+        <a href="{{ home }}#projects"   class="hover:text-slate-900 transition-colors">Projects</a>
+        <a href="{{ home }}#interests"  class="hover:text-slate-900 transition-colors">Interests</a>
+        <a href="{{ home }}#contact"    class="hover:text-slate-900 transition-colors">Contact</a>
         <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer"
            class="hover:text-slate-900 transition-colors" aria-label="GitHub">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -45,11 +63,11 @@
     </div>
   </header>
 
-  <main class="max-w-3xl mx-auto px-6 py-16">
+  <main class="max-w-3xl mx-auto px-6">
     {{ content }}
   </main>
 
-  <footer class="border-t border-slate-100">
+  <footer class="border-t border-slate-100 mt-8">
     <div class="max-w-3xl mx-auto px-6 py-6 flex items-center justify-between text-xs text-slate-400">
       <span>© {{ 'now' | date: '%Y' }} {{ site.first_name }} {{ site.last_name }}</span>
       <a href="mailto:{{ site.email }}" class="hover:text-indigo-500 transition-colors">{{ site.email }}</a>
