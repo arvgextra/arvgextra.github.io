@@ -11,6 +11,7 @@ github_username: arvgextra
 linkedin_username: aarav-saran-gambhir
 
 # Build settings
+include: ["_pages"]
 markdown: kramdown
 highlighter: rouge
 kramdown:
