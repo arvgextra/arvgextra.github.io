@@ -1,4 +1,101 @@
-<!-- ─── HERO ─────────────────────────────────────────────── -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aarav Gambhir</title>
+  <meta name="description" content="Data scientist & AI engineer. BS Data Science, Northeastern University.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..700&display=swap" rel="stylesheet">
+  <script>
+    window.tailwindConfig = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* ─── Color tokens — edit here to retheme the entire site ─── */
+    :root {
+      --color-primary:      #f4753e; /* tangerine-400 — buttons, active states  */
+      --color-primary-dark: #f1520e; /* tangerine-500 — hover on primary        */
+      --color-accent:       #619e8b; /* muted-teal-500 — section labels, pills  */
+      --color-bg:           #15140f; /* ebony-950 — page background             */
+      --color-text:         #eae9e1; /* ebony-100 — body text                   */
+      --color-text-muted:   #aaa788; /* ebony-500 — secondary text              */
+      --color-border:       #27261b; /* ebony-800 — dividers, card borders      */
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+
+    /* Semi-transparent nav using CSS color-mix (avoids Tailwind opacity limitation with CSS vars) */
+    .nav-bg { background-color: color-mix(in srgb, var(--color-bg) 92%, transparent); }
+
+    /* ─── Tailwind Typography — map prose colors to design tokens ─── */
+    /* This is the correct way to theme prose: override the plugin's own CSS vars. */
+    /* Avoids prose-p:text-[var(...)] modifiers which the Play CDN can't reliably generate. */
+    .prose {
+      --tw-prose-body:          var(--color-text-muted);
+      --tw-prose-headings:      var(--color-text);
+      --tw-prose-lead:          var(--color-text-muted);
+      --tw-prose-links:         var(--color-primary);
+      --tw-prose-bold:          var(--color-text);
+      --tw-prose-counters:      var(--color-text-muted);
+      --tw-prose-bullets:       var(--color-accent);
+      --tw-prose-hr:            var(--color-border);
+      --tw-prose-quotes:        var(--color-text);
+      --tw-prose-quote-borders: var(--color-border);
+      --tw-prose-captions:      var(--color-text-muted);
+      --tw-prose-code:          var(--color-accent);
+      --tw-prose-pre-code:      var(--color-text);
+      --tw-prose-pre-bg:        var(--color-border);
+      --tw-prose-th-borders:    var(--color-border);
+      --tw-prose-td-borders:    var(--color-border);
+    }
+
+    /* Inline code background — no dedicated Tailwind Typography variable exists for this */
+    .prose :not(pre) > code {
+      background-color: var(--color-border);
+    }
+  </style>
+</head>
+<body class="bg-[var(--color-bg)] text-[var(--color-text)] font-sans antialiased">
+
+  <header class="sticky top-0 z-50 nav-bg backdrop-blur-sm border-b border-[var(--color-border)]">
+    <div class="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
+      <a href="/" class="text-sm font-semibold text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">
+        Aarav Gambhir
+      </a>
+      
+      <nav class="flex items-center gap-4 text-sm font-medium text-[var(--color-text-muted)]">
+        <a href="/#about"      class="hover:text-[var(--color-text)] transition-colors">About</a>
+        <a href="/#experience" class="hover:text-[var(--color-text)] transition-colors">Experience</a>
+        <a href="/#skills"     class="hover:text-[var(--color-text)] transition-colors">Skills</a>
+        <a href="/#projects"   class="hover:text-[var(--color-text)] transition-colors">Projects</a>
+        <a href="/#interests"  class="hover:text-[var(--color-text)] transition-colors">Interests</a>
+        <a href="/#contact"    class="hover:text-[var(--color-text)] transition-colors">Contact</a>
+        <a href="https://github.com/arvgextra" target="_blank" rel="noopener noreferrer"
+           class="hover:text-[var(--color-text)] transition-colors" aria-label="GitHub">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/aarav-saran-gambhir" target="_blank" rel="noopener noreferrer"
+           class="hover:text-[var(--color-text)] transition-colors" aria-label="LinkedIn">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-6">
+    <!-- ─── HERO ─────────────────────────────────────────────── -->
 <section class="pt-20 pb-24">
 <div class="flex flex-col-reverse sm:flex-row items-center gap-10 sm:gap-16">
 <div class="flex-1 text-center sm:text-left">
@@ -418,6 +515,31 @@
 
 <ul class="space-y-3">
   
+  <li class="flex items-center gap-3 text-[var(--color-text-muted)]">
+    <span class="shrink-0 w-1.5 h-1.5 rounded-full bg-[var(--color-accent)]"></span>
+    Applied AI research and production ML systems
+  </li>
+  
+  <li class="flex items-center gap-3 text-[var(--color-text-muted)]">
+    <span class="shrink-0 w-1.5 h-1.5 rounded-full bg-[var(--color-accent)]"></span>
+    Knowledge graphs and hybrid retrieval
+  </li>
+  
+  <li class="flex items-center gap-3 text-[var(--color-text-muted)]">
+    <span class="shrink-0 w-1.5 h-1.5 rounded-full bg-[var(--color-accent)]"></span>
+    Cricket (IPL)
+  </li>
+  
+  <li class="flex items-center gap-3 text-[var(--color-text-muted)]">
+    <span class="shrink-0 w-1.5 h-1.5 rounded-full bg-[var(--color-accent)]"></span>
+    Flamenco music
+  </li>
+  
+  <li class="flex items-center gap-3 text-[var(--color-text-muted)]">
+    <span class="shrink-0 w-1.5 h-1.5 rounded-full bg-[var(--color-accent)]"></span>
+    Cultural travel
+  </li>
+  
 </ul>
 </section>
 
@@ -464,3 +586,16 @@
   </a>
 </div>
 </section>
+
+
+  </main>
+
+  <footer class="border-t border-[var(--color-border)] mt-8">
+    <div class="max-w-3xl mx-auto px-6 py-6 flex items-center justify-between text-xs text-[var(--color-text-muted)]">
+      <span>© 2026 Aarav Gambhir</span>
+      <a href="mailto:arvgextra@gmail.com" class="hover:text-[var(--color-accent)] transition-colors">arvgextra@gmail.com</a>
+    </div>
+  </footer>
+
+</body>
+</html>
