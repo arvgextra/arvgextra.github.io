@@ -13,8 +13,7 @@ permalink: /
     Aarav Saran<br>Gambhir
   </h1>
   <p class="mt-5 text-lg text-[var(--color-text-muted)] leading-relaxed max-w-lg">
-    Building LLM-powered extraction systems, evaluation frameworks, and intelligent document pipelines.
-    Northeastern University — BS Data Science, graduating May 2026.
+    Recent graduate in Data Science · Applied AI &amp; ML Engineer · LLM systems, data pipelines, evaluation frameworks
   </p>
   <div class="mt-8 flex flex-wrap items-center gap-3 justify-center sm:justify-start">
     <a href="#projects"
@@ -50,8 +49,10 @@ permalink: /
     frameworks. I enjoy figuring out how models behave in the real world and making them more reliable.
   </p>
   <p>
-    Outside of school and work, I love traveling, food, and sports — you'll often hear me talk about the number of
-    countries I've visited (43 and counting) and teams I follow obsessively (Manchester United, Boston Celtics).
+    Outside of school and work, I love traveling, food, and sports — 43 countries so far, with Madagascar and Ecuador
+    being two I keep recommending. I played saxophone for seven years, and you'll often hear me talking about the teams
+    I follow obsessively (Manchester United, Boston Celtics) or whatever sport I'm currently playing — badminton,
+    tennis, table tennis.
   </p>
 </div>
 </section>
@@ -152,21 +153,6 @@ permalink: /
   </a>
   {% endfor %}
 </div>
-</section>
-
-<!-- ─── INTERESTS ────────────────────────────────────────── -->
-<section id="interests" class="py-24 border-t border-[var(--color-border)]">
-<p class="text-xs font-semibold tracking-widest text-[var(--color-accent)] uppercase mb-3">Interests</p>
-<h2 class="text-2xl font-bold text-[var(--color-text)] mb-8">Beyond work</h2>
-{% assign interests_section = site.data.cv.cv | where: "title", "Interests" | first %}
-<ul class="space-y-3">
-  {% for interest in interests_section.contents %}
-  <li class="flex items-center gap-3 text-[var(--color-text-muted)]">
-    <span class="shrink-0 w-1.5 h-1.5 rounded-full bg-[var(--color-accent)]"></span>
-    {{ interest }}
-  </li>
-  {% endfor %}
-</ul>
 </section>
 
 <!-- ─── INVOLVEMENT ──────────────────────────────────────── -->

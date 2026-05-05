@@ -81,11 +81,11 @@ cv:
   - title: Involvement & Honors
     type: list
     contents:
-      - "Director of Outreach, AI Club — led outreach initiatives and co-organized InnovAIte, a university-wide AI hackathon (leadership role)"
-      - "John Martinson Honors Program"
-      - "Dean's List"
-      - "Club Ultimate Frisbee Team"
-      - "Club Badminton Team"
+      - "Director of Outreach, AI Club — leadership role; led outreach initiatives and co-organized InnovAIte, a university-wide AI hackathon"
+      - "John Martinson Honors Program — selective honors program at Northeastern"
+      - "Dean's List — academic excellence recognition"
+      - "Club Ultimate Frisbee Team — competitive recreational team"
+      - "Club Badminton Team — competitive recreational team"
 
   - title: Skills
     type: nested_list
@@ -107,11 +107,3 @@ cv:
           - C++, JavaScript, TypeScript
           - Power Platform (Apps, Automate), Jira, Figma
 
-  - title: Interests
-    type: list
-    contents:
-      - Applied AI research and production ML systems
-      - Knowledge graphs and hybrid retrieval
-      - Cricket (IPL)
-      - Flamenco music
-      - Cultural travel
