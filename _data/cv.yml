@@ -17,9 +17,17 @@ cv:
   - title: Experience
     type: time_table
     contents:
+      - title: AI/ML Engineer Co-op
+        institution: Magicpin
+        institution_logo: magicpin.png
+        year: Dec 2025 – Jan 2026
+        description:
+          - Optimized a multi-agent customer support system for Fine Dine and QSR operations by refining prompt architecture and integrating evaluation frameworks to improve response accuracy across merchant, rider, and customer agents.
+          - Integrated BigQuery via MCP to automate SQL generation and synthesize data summaries for real-time reporting.
+
       - title: Product Developer Co-op
         institution: EXL Service
-        institution_logo: exl_logo.png   # place at assets/img/exl_logo.png
+        institution_logo: exl_logo.png
         year: Aug–Dec 2025
         description:
           - Designed and implemented config-driven document ingestion and extraction pipelines using multimodal LLMs (Claude Vision), AWS Textract, and YAML schemas, simplifying integration of new unstructured document types.
@@ -28,20 +36,60 @@ cv:
 
       - title: Business Analyst Co-op
         institution: HarbourVest Partners
-        institution_logo: harbourvest_logo.png   # place at assets/img/harbourvest_logo.png
+        institution_logo: harbourvest_logo.png
         year: Jul–Dec 2024
         description:
           - Collaborated with cross-functional teams to build Microsoft Power Platform applications that automated operational workflows and visualized business metrics, reducing manual reporting time by 40%.
           - Designed and deployed a vendor due diligence system that improved data accuracy and operational efficiency, accelerating vendor onboarding and reducing manual data entry.
           - Streamlined M365 infrastructure and permissions, improving data security and cutting internal support tickets by 25%.
 
+      - title: Product Design Intern
+        institution: SocialStar
+        institution_logo: socialstar.jpeg
+        year: May 2024 – Jun 2024
+        description:
+          - Helped design how users interact with SocialStar, a platform that enables employee-driven sustainability initiatives through personalized carbon tracking and challenges, resulting in a more intuitive user experience.
+          - Created interactive, challenge-based features focused on turning sustainability into a shared experience by connecting individual actions to company-wide environmental goals.
+
+      - title: Teaching Assistant — Discrete Structures
+        institution: Northeastern University
+        institution_logo: neu_logo.png
+        year: Sep 2023 – Dec 2023
+        description:
+          - Held office hours, graded assignments, wrote notes, and ran help sessions for undergraduate Discrete Structures course at Khoury College of Computer Sciences.
+
+      - title: Sales Associate
+        institution: Nike
+        institution_logo: nike.png
+        year: Jul 2023 – Sep 2023
+        description:
+          - Provided customer service and product knowledge on the sales floor.
+
       - title: Data Analyst Intern
         institution: boAt Lifestyle
-        institution_logo: boat_logo.png   # place at assets/img/boat_logo.png
+        institution_logo: boat_logo.png
         year: May–Jun 2023
         description:
           - Leveraged Python and basic machine learning models to identify demand patterns, contributing to a 10% increase in pre-launch customer interest and informing early product feature decisions and launch positioning.
           - Presented insights based on data to senior leadership that helped reduce customer complaints by 30%.
+
+  - title: School Involvement
+    type: time_table
+    contents:
+      - title: Director of Outreach — AI Club
+        institution: Northeastern University
+        institution_logo: neu_logo.png
+        year: 2023 – Present
+        description:
+          - Organized and helped plan InnovAIte, a university-wide AI hackathon.
+          - Led outreach efforts to grow club membership and external partnerships.
+
+      - title: Club Badminton
+        institution: Northeastern University
+        institution_logo: neu_logo.png
+        year: 2022 – Present
+        description:
+          - Competitive member of Northeastern's club badminton team.
 
   - title: Skills
     type: nested_list

@@ -23,7 +23,7 @@ permalink: /
     </a>
     <a href="{{ '/assets/pdf/resume.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"
        class="px-5 py-2.5 bg-[var(--color-border)] text-[var(--color-text)] text-sm font-medium rounded-lg hover:opacity-80 transition-opacity">
-      Download Resume ↓
+      View Resume ↗
     </a>
     <a href="#contact"
        class="px-5 py-2.5 text-[var(--color-text-muted)] text-sm font-medium hover:text-[var(--color-primary)] transition-colors">
@@ -44,14 +44,13 @@ permalink: /
 <h2 class="text-2xl font-bold text-[var(--color-text)] mb-8">Who I am</h2>
 <div class="space-y-4 text-[var(--color-text-muted)] leading-relaxed">
   <p>
-    Data scientist and AI engineer with experience building LLM-powered extraction systems, evaluation frameworks,
-    and multimodal document pipelines. Skilled in Python, AWS, and applied ML with industry experience across
-    fintech, enterprise automation, and computer vision.
+    I'm a data scientist and AI engineer who likes working on problems that don't have clean solutions — messy documents,
+    unreliable models, systems that need to actually work in production. Most of my time goes into building things with
+    LLMs, whether that's extraction pipelines, evaluation frameworks, or multi-agent systems.
   </p>
   <p>
-    Candidate for Bachelor of Science in Data Science with a Minor in Economics at Northeastern University
-    (May 2026), GPA 3.75/4.00. Member of the Honor's Program, Director of Outreach for the AI Club, and
-    Teaching Assistant at the Khoury College of Computer Sciences.
+    I'm finishing my BS in Data Science at Northeastern, with a minor in Economics. Outside of that I help run the AI
+    Club, play badminton, and follow cricket more closely than I probably should.
   </p>
 </div>
 </section>
@@ -66,9 +65,17 @@ permalink: /
   <div class="flex gap-5">
     <div class="shrink-0 mt-0.5">
       {% if entry.institution_logo %}
-      <img src="{{ '/assets/img/' | append: entry.institution_logo | relative_url }}"
-           alt="{{ entry.institution }}"
-           class="w-11 h-11 rounded-lg object-contain bg-[var(--color-border)] border border-[var(--color-border)] p-1.5">
+        {% if entry.institution_logo == "harbourvest_logo.png" %}
+        <div class="w-11 h-11 rounded-lg bg-white border border-[var(--color-border)] p-1">
+          <img src="{{ '/assets/img/' | append: entry.institution_logo | relative_url }}"
+               alt="{{ entry.institution }}"
+               class="w-full h-full object-contain">
+        </div>
+        {% else %}
+        <img src="{{ '/assets/img/' | append: entry.institution_logo | relative_url }}"
+             alt="{{ entry.institution }}"
+             class="w-11 h-11 rounded-lg object-contain bg-[var(--color-border)] border border-[var(--color-border)] p-1.5">
+        {% endif %}
       {% else %}
       <div class="w-11 h-11 rounded-lg bg-[var(--color-border)] border border-[var(--color-border)]"></div>
       {% endif %}
@@ -158,6 +165,47 @@ permalink: /
   </li>
   {% endfor %}
 </ul>
+</section>
+
+<!-- ─── INVOLVEMENT ──────────────────────────────────────── -->
+<section id="involvement" class="py-24 border-t border-[var(--color-border)]">
+<p class="text-xs font-semibold tracking-widest text-[var(--color-accent)] uppercase mb-3">Involvement</p>
+<h2 class="text-2xl font-bold text-[var(--color-text)] mb-10">At Northeastern</h2>
+{% assign involvement_section = site.data.cv.cv | where: "title", "School Involvement" | first %}
+<div class="space-y-10">
+  {% for entry in involvement_section.contents %}
+  <div class="flex gap-5">
+    <div class="shrink-0 mt-0.5">
+      {% if entry.institution_logo %}
+      <img src="{{ '/assets/img/' | append: entry.institution_logo | relative_url }}"
+           alt="{{ entry.institution }}"
+           class="w-11 h-11 rounded-lg object-contain bg-[var(--color-border)] border border-[var(--color-border)] p-1.5">
+      {% else %}
+      <div class="w-11 h-11 rounded-lg bg-[var(--color-border)] border border-[var(--color-border)]"></div>
+      {% endif %}
+    </div>
+    <div class="flex-1">
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <h3 class="font-semibold text-[var(--color-text)]">{{ entry.title }}</h3>
+          <p class="text-sm text-[var(--color-text-muted)] mt-0.5">{{ entry.institution }}</p>
+        </div>
+        <span class="shrink-0 text-sm text-[var(--color-text-muted)] tabular-nums whitespace-nowrap">{{ entry.year }}</span>
+      </div>
+      {% if entry.description %}
+      <ul class="mt-3 space-y-2">
+        {% for item in entry.description %}
+        <li class="flex gap-2.5 text-sm text-[var(--color-text-muted)] leading-relaxed">
+          <span class="mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-[var(--color-accent)]"></span>
+          <span>{{ item }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
 </section>
 
 <!-- ─── CONTACT ──────────────────────────────────────────── -->
