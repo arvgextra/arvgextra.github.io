@@ -61,6 +61,16 @@
     .prose :not(pre) > code {
       background-color: var(--color-border);
     }
+
+    /* Explicit link styles — CDN may not generate prose-a:* modifier classes reliably */
+    .prose a {
+      color: var(--color-primary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .prose a:hover {
+      color: var(--color-primary-dark);
+    }
   </style>
 </head>
 <body class="bg-[var(--color-bg)] text-[var(--color-text)] font-sans antialiased">
@@ -115,7 +125,6 @@
 
     <div class="prose prose-slate max-w-none
       prose-headings:font-semibold prose-headings:tracking-tight
-      prose-a:no-underline hover:prose-a:underline
       prose-strong:font-semibold
       prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:font-normal prose-code:before:content-none prose-code:after:content-none">
       <p>Explored whether book descriptions, textual characteristics, and author history can predict reader ratings before reviews exist. Extracted TF-IDF and embedding features from descriptions alongside metadata (genre, publication year, page count, author rating history) and trained two models: a <strong>Neural Network</strong> in Python and a <strong>Bayesian Regression Model</strong> in R. Compared models using description features alone vs. full metadata to evaluate the predictive value of language vs. context.</p>

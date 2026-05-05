@@ -61,6 +61,16 @@
     .prose :not(pre) > code {
       background-color: var(--color-border);
     }
+
+    /* Explicit link styles — CDN may not generate prose-a:* modifier classes reliably */
+    .prose a {
+      color: var(--color-primary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .prose a:hover {
+      color: var(--color-primary-dark);
+    }
   </style>
 </head>
 <body class="bg-[var(--color-bg)] text-[var(--color-text)] font-sans antialiased">
@@ -114,7 +124,6 @@
 
   <div class="prose prose-slate max-w-none
     prose-headings:font-semibold prose-headings:tracking-tight
-    prose-a:no-underline hover:prose-a:underline
     prose-strong:font-semibold
     prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:font-normal prose-code:before:content-none prose-code:after:content-none">
     <p>Developing a real-time computer vision system using <strong>YOLOv8</strong> and <strong>ByteTrack</strong> to detect and track playing cards, integrating a <strong>Hi-Lo card counting engine</strong>, a finite state machine for live strategic recommendations, and a reinforcement learning agent to optimize betting and play decisions.</p>
