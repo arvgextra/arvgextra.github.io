@@ -8,16 +8,17 @@ cv:
     contents:
       - title: BS Data Science, Minor in Economics
         institution: Northeastern University — Khoury College of Computer Sciences
-        institution_logo: neu_logo.png   # place at assets/img/neu_logo.png
+        institution_logo: neu_logo.png
         year: May 2026
         description:
+          - "B.S. Data Science, Minor in Economics — Graduated May 2026"
           - "GPA: 3.75 / 4.00"
           - "Honor's Program · AI Club, Director of Outreach · TA, Khoury College"
 
   - title: Experience
     type: time_table
     contents:
-      - title: AI/ML Engineer Co-op
+      - title: Data Scientist Intern
         institution: Magicpin
         institution_logo: magicpin.png
         year: Dec 2025 – Jan 2026
@@ -56,14 +57,18 @@ cv:
         institution_logo: neu_logo.png
         year: Sep 2023 – Dec 2023
         description:
-          - Held office hours, graded assignments, wrote notes, and ran help sessions for undergraduate Discrete Structures course at Khoury College of Computer Sciences.
+          - Held weekly office hours and help sessions for undergraduate students in Discrete Structures at Khoury College of Computer Sciences.
+          - Graded assignments and exams, providing detailed written feedback to support student understanding.
+          - Collaborated with course staff to create supplementary notes and study materials.
 
       - title: Sales Associate
         institution: Nike
         institution_logo: nike.png
         year: Jul 2023 – Sep 2023
         description:
-          - Provided customer service and product knowledge on the sales floor.
+          - Assisted customers on the sales floor with product selection, sizing, and brand knowledge across footwear and apparel.
+          - Maintained product displays and restocked inventory to ensure a well-organized store environment.
+          - Consistently met individual sales targets while contributing to a positive team environment.
 
       - title: Data Analyst Intern
         institution: boAt Lifestyle
@@ -73,23 +78,14 @@ cv:
           - Leveraged Python and basic machine learning models to identify demand patterns, contributing to a 10% increase in pre-launch customer interest and informing early product feature decisions and launch positioning.
           - Presented insights based on data to senior leadership that helped reduce customer complaints by 30%.
 
-  - title: School Involvement
-    type: time_table
+  - title: Involvement & Honors
+    type: list
     contents:
-      - title: Director of Outreach — AI Club
-        institution: Northeastern University
-        institution_logo: neu_logo.png
-        year: 2023 – Present
-        description:
-          - Organized and helped plan InnovAIte, a university-wide AI hackathon.
-          - Led outreach efforts to grow club membership and external partnerships.
-
-      - title: Club Badminton
-        institution: Northeastern University
-        institution_logo: neu_logo.png
-        year: 2022 – Present
-        description:
-          - Competitive member of Northeastern's club badminton team.
+      - "Director of Outreach, AI Club — led outreach initiatives and co-organized InnovAIte, a university-wide AI hackathon (leadership role)"
+      - "John Martinson Honors Program"
+      - "Dean's List"
+      - "Club Ultimate Frisbee Team"
+      - "Club Badminton Team"
 
   - title: Skills
     type: nested_list

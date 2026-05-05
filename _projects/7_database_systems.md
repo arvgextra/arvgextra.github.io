@@ -2,7 +2,7 @@
 layout: page
 title: Database Systems — Redis, MySQL & MongoDB
 description: Three database deep-dives comparing performance and modeling approaches across relational, key-value, and document stores.
-importance: 7
+importance: 8
 ---
 
 Three standalone database engineering projects exploring different storage paradigms:

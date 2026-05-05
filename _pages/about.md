@@ -44,13 +44,14 @@ permalink: /
 <h2 class="text-2xl font-bold text-[var(--color-text)] mb-8">Who I am</h2>
 <div class="space-y-4 text-[var(--color-text-muted)] leading-relaxed">
   <p>
-    I'm a data scientist and AI engineer who likes working on problems that don't have clean solutions — messy documents,
-    unreliable models, systems that need to actually work in production. Most of my time goes into building things with
-    LLMs, whether that's extraction pipelines, evaluation frameworks, or multi-agent systems.
+    A recent graduate from Northeastern University, where I completed my B.S. in Data Science with a Minor in Economics,
+    I'm really interested in applied AI and ML roles — especially where I can work on LLM systems and real-world data
+    problems that aren't clean or well-defined: things like LLM-driven workflows, data pipelines, and evaluation
+    frameworks. I enjoy figuring out how models behave in the real world and making them more reliable.
   </p>
   <p>
-    I'm finishing my BS in Data Science at Northeastern, with a minor in Economics. Outside of that I help run the AI
-    Club, play badminton, and follow cricket more closely than I probably should.
+    Outside of school and work, I love traveling, food, and sports — you'll often hear me talk about the number of
+    countries I've visited (43 and counting) and teams I follow obsessively (Manchester United, Boston Celtics).
   </p>
 </div>
 </section>
@@ -65,7 +66,8 @@ permalink: /
   <div class="flex gap-5">
     <div class="shrink-0 mt-0.5">
       {% if entry.institution_logo %}
-        {% if entry.institution_logo == "harbourvest_logo.png" %}
+        {% assign white_logos = "harbourvest_logo.png,boat_logo.png,neu_logo.png,nike.png" | split: "," %}
+        {% if white_logos contains entry.institution_logo %}
         <div class="w-11 h-11 rounded-lg bg-white border border-[var(--color-border)] p-1">
           <img src="{{ '/assets/img/' | append: entry.institution_logo | relative_url }}"
                alt="{{ entry.institution }}"
@@ -169,43 +171,17 @@ permalink: /
 
 <!-- ─── INVOLVEMENT ──────────────────────────────────────── -->
 <section id="involvement" class="py-24 border-t border-[var(--color-border)]">
-<p class="text-xs font-semibold tracking-widest text-[var(--color-accent)] uppercase mb-3">Involvement</p>
-<h2 class="text-2xl font-bold text-[var(--color-text)] mb-10">At Northeastern</h2>
-{% assign involvement_section = site.data.cv.cv | where: "title", "School Involvement" | first %}
-<div class="space-y-10">
-  {% for entry in involvement_section.contents %}
-  <div class="flex gap-5">
-    <div class="shrink-0 mt-0.5">
-      {% if entry.institution_logo %}
-      <img src="{{ '/assets/img/' | append: entry.institution_logo | relative_url }}"
-           alt="{{ entry.institution }}"
-           class="w-11 h-11 rounded-lg object-contain bg-[var(--color-border)] border border-[var(--color-border)] p-1.5">
-      {% else %}
-      <div class="w-11 h-11 rounded-lg bg-[var(--color-border)] border border-[var(--color-border)]"></div>
-      {% endif %}
-    </div>
-    <div class="flex-1">
-      <div class="flex items-start justify-between gap-4">
-        <div>
-          <h3 class="font-semibold text-[var(--color-text)]">{{ entry.title }}</h3>
-          <p class="text-sm text-[var(--color-text-muted)] mt-0.5">{{ entry.institution }}</p>
-        </div>
-        <span class="shrink-0 text-sm text-[var(--color-text-muted)] tabular-nums whitespace-nowrap">{{ entry.year }}</span>
-      </div>
-      {% if entry.description %}
-      <ul class="mt-3 space-y-2">
-        {% for item in entry.description %}
-        <li class="flex gap-2.5 text-sm text-[var(--color-text-muted)] leading-relaxed">
-          <span class="mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-[var(--color-accent)]"></span>
-          <span>{{ item }}</span>
-        </li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-    </div>
-  </div>
+<p class="text-xs font-semibold tracking-widest text-[var(--color-accent)] uppercase mb-3">Involvement & Honors</p>
+<h2 class="text-2xl font-bold text-[var(--color-text)] mb-8">At Northeastern</h2>
+{% assign involvement_section = site.data.cv.cv | where: "title", "Involvement & Honors" | first %}
+<ul class="space-y-3">
+  {% for item in involvement_section.contents %}
+  <li class="flex items-center gap-3 text-[var(--color-text-muted)]">
+    <span class="shrink-0 w-1.5 h-1.5 rounded-full bg-[var(--color-accent)]"></span>
+    {{ item }}
+  </li>
   {% endfor %}
-</div>
+</ul>
 </section>
 
 <!-- ─── CONTACT ──────────────────────────────────────────── -->
@@ -213,7 +189,7 @@ permalink: /
 <p class="text-xs font-semibold tracking-widest text-[var(--color-accent)] uppercase mb-3">Contact</p>
 <h2 class="text-2xl font-bold text-[var(--color-text)] mb-3">Get in touch</h2>
 <p class="text-sm text-[var(--color-text-muted)] mb-10">
-  Open to full-time roles in AI engineering and data science — graduating May 2026.
+  Open to full-time roles in AI engineering and data science — graduated May 2026.
 </p>
 <div class="space-y-4">
   <a href="mailto:{{ site.email }}" class="flex items-center gap-4 group w-fit">

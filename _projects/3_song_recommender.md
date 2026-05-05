@@ -2,7 +2,7 @@
 layout: page
 title: Graph-Based Song Recommendation System
 description: Neo4j graph database and PCA-driven recommender using Spotify audio features and genre encoding.
-importance: 3
+importance: 4
 github: https://github.com/arvgextra/graphdb_song-recommender
 ---
 

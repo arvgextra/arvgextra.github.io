@@ -2,7 +2,7 @@
 layout: page
 title: AAA Bond Price Prediction
 description: Polynomial regression model predicting AAA-rated corporate bond prices from macroeconomic indicators.
-importance: 5
+importance: 6
 github: https://github.com/arvgextra/AAABonds
 ---
 

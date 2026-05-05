@@ -2,7 +2,7 @@
 layout: project
 title: Book Rating Prediction Modeling
 description: Predicting Goodreads book ratings from descriptions, metadata, and author history using neural networks and Bayesian regression.
-importance: 8
+importance: 2
 github: https://github.com/sanjanaanandneu/BookRatingPredictionModeling
 ---
 
