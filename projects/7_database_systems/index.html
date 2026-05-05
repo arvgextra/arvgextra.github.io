@@ -120,11 +120,23 @@
     prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:font-normal prose-code:before:content-none prose-code:after:content-none">
     <p>Three standalone database engineering projects exploring different storage paradigms:</p>
 
-<p><strong>Redis vs MySQL — Twitter-like API</strong> (<a href="https://github.com/arvgextra/twitter_rdb">twitter_rdb</a> · <a href="https://github.com/arvgextra/graph-data-models">graph-data-models</a>)
-Modeled a Twitter-style social graph (users, tweets, follows, timelines) in both <strong>MySQL</strong> and <strong>Redis</strong>. Benchmarked read/write performance across both and built a Flask API on top of each. Redis significantly outperformed MySQL on timeline fan-out reads via pre-computed sorted sets, while MySQL provided stronger consistency for relational queries.</p>
+<hr />
 
-<p><strong>EV Dataset — MongoDB + Geospatial Indexing</strong> (<a href="https://github.com/arvgextra/ev_mongo">ev_mongo</a>)
-Imported a GeoJSON electric vehicle dataset into <strong>MongoDB</strong> via Docker, flattened nested GeoJSON features into NDJSON for bulk import, and built a <code class="language-plaintext highlighter-rouge">2dsphere</code> geospatial index for proximity queries. Explored aggregation pipelines and geospatial query patterns using PyMongo.</p>
+<h3 id="redis-vs-mysql--twitter-like-api">Redis vs MySQL — Twitter-like API</h3>
+
+<p>Modeled a Twitter-style social graph (users, tweets, follows, timelines) in both <strong>MySQL</strong> and <strong>Redis</strong>. Benchmarked read/write performance across both and built a Flask API on top of each. Redis significantly outperformed MySQL on timeline fan-out reads via pre-computed sorted sets, while MySQL provided stronger consistency for relational queries.</p>
+
+<p><a href="https://github.com/arvgextra/twitter_rdb">View twitter_rdb on GitHub ↗</a> · <a href="https://github.com/arvgextra/graph-data-models">View graph-data-models on GitHub ↗</a></p>
+
+<hr />
+
+<h3 id="ev-dataset--mongodb--geospatial-indexing">EV Dataset — MongoDB + Geospatial Indexing</h3>
+
+<p>Imported a GeoJSON electric vehicle dataset into <strong>MongoDB</strong> via Docker, flattened nested GeoJSON features into NDJSON for bulk import, and built a <code class="language-plaintext highlighter-rouge">2dsphere</code> geospatial index for proximity queries. Explored aggregation pipelines and geospatial query patterns using PyMongo.</p>
+
+<p><a href="https://github.com/arvgextra/ev_mongo">View ev_mongo on GitHub ↗</a></p>
+
+<hr />
 
 <p><strong>Stack:</strong> Redis · MySQL · MongoDB · Flask · Docker · PyMongo · Python · SQL</p>
 
