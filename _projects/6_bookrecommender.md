@@ -2,7 +2,7 @@
 layout: page
 title: Book Recommender
 description: Goodreads-based book recommender using sentiment analysis, KMeans clustering, and centroid similarity scoring.
-importance: 7
+importance: 8
 github: https://github.com/arvgextra/BookRecommender
 ---
 

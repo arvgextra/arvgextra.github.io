@@ -2,7 +2,7 @@
 layout: page
 title: "agentX — AI Multi-Agent Support Platform"
 description: Multi-agent customer support system for Fine Dine and QSR operations.
-importance: 3
+importance: 4
 ---
 
 Optimized a **multi-agent customer support system** for Fine Dine and QSR operations (Magicpin) by refining prompt architecture and integrating evaluation frameworks to improve response accuracy across merchant, rider, and customer agents.

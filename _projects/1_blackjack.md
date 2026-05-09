@@ -2,7 +2,7 @@
 layout: page
 title: Blackjack Strategic Assistant
 description: Real-time computer vision system for card detection, counting, and play recommendations.
-importance: 1
+importance: 2
 github: https://github.com/lucascgay/vision-based_blackjack_card_counting
 ---
 

@@ -2,7 +2,7 @@
 layout: page
 title: StartupSpace
 description: Full-stack platform connecting startups, investors, acquirers, and researchers via a relational database and Flask API.
-importance: 5
+importance: 6
 github: https://github.com/Tanmay2107/24s-cs3200project-startupspace
 ---
 
