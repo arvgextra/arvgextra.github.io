@@ -26,7 +26,7 @@ cv:
           - Optimized a multi-agent customer support system for Fine Dine and QSR operations by refining prompt architecture and integrating evaluation frameworks to improve response accuracy across merchant, rider, and customer agents.
           - Integrated BigQuery via MCP to automate SQL generation and synthesize data summaries for real-time reporting.
 
-      - title: Product Developer Co-op
+      - title: Product Engineer Co-op
         institution: EXL Service
         institution_logo: exl_logo.png
         year: Aug–Dec 2025
@@ -35,7 +35,7 @@ cv:
           - Built LLM model evaluation and confidence calibration frameworks and integrated knowledge graph-based reasoning (GraphRAG) to improve data quality and structured extraction from unstructured legal and medical documents, achieving 95% field-level extraction accuracy.
           - Developed automated machine-learning benchmarking workflows using ground-truth datasets, OCR evaluation, comparative model testing, and PDF reporting, which enabled faster model-tuning decisions and quicker deployments.
 
-      - title: Business Analyst Co-op
+      - title: Product Owner Co-op
         institution: HarbourVest Partners
         institution_logo: harbourvest_logo.png
         year: Jul–Dec 2024
